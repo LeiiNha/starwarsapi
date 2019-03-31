@@ -34,10 +34,15 @@ class SWCollectionViewCell: UICollectionViewCell {
         charImage.translatesAutoresizingMaskIntoConstraints = false
         charImage.topAnchor.constraint(equalTo: detailView.topAnchor, constant: 10).isActive = true
         charImage.centerXAnchor.constraint(equalTo: detailView.centerXAnchor).isActive = true
+        charImage.widthAnchor.constraint(equalToConstant: 40.0).isActive = true
+        charImage.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
 
         setAnchors(to: nameLabel, equalTo: detailView, topConstant: 50)
         setAnchors(to: speciesLabel, equalTo: nameLabel, topConstant: 20)
         setAnchors(to: vehicleLabel, equalTo: speciesLabel, topConstant: 20)
+        
+        //TODO: Fix some images not showing
+        //charImage.image = UIImage(named: Int.random(in: 1..<12).description)?.withRenderingMode(.alwaysTemplate)
         
     }
     

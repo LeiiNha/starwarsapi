@@ -9,9 +9,9 @@
 import UIKit
 
 class SWCharDetailsViewController: UIViewController {
-    let character: SWCharacter
+    let character: SWPerson
 
-    init(character: SWCharacter) {
+    init(character: SWPerson) {
         self.character = character
         super.init(nibName: nil, bundle: nil)
     }

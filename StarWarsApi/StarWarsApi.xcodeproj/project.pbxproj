@@ -21,6 +21,20 @@
 		CC442357225037D3009F0F82 /* SWCharDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC442356225037D3009F0F82 /* SWCharDetailsViewController.swift */; };
 		CC44235922503909009F0F82 /* SWCustomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44235822503909009F0F82 /* SWCustomAnimator.swift */; };
 		CC44235B22503E30009F0F82 /* SWCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44235A22503E30009F0F82 /* SWCharacter.swift */; };
+		CC4423622250BD0F009F0F82 /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4423612250BD0F009F0F82 /* EndpointType.swift */; };
+		CC4423642250BE2B009F0F82 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4423632250BE2B009F0F82 /* HTTPMethod.swift */; };
+		CC4423662250BE60009F0F82 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4423652250BE60009F0F82 /* HTTPTask.swift */; };
+		CC4423682250BF00009F0F82 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4423672250BF00009F0F82 /* ParameterEncoding.swift */; };
+		CC44236A2250C282009F0F82 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4423692250C282009F0F82 /* NetworkError.swift */; };
+		CC44236C2250C317009F0F82 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44236B2250C317009F0F82 /* URLParameterEncoder.swift */; };
+		CC44236E2250C505009F0F82 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44236D2250C505009F0F82 /* JSONParameterEncoder.swift */; };
+		CC4423702250C5F4009F0F82 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44236F2250C5F4009F0F82 /* NetworkRouter.swift */; };
+		CC4423722250C6F6009F0F82 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4423712250C6F6009F0F82 /* Router.swift */; };
+		CC4423742250CCF1009F0F82 /* StarWarsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4423732250CCF1009F0F82 /* StarWarsApi.swift */; };
+		CC4423772250D0BA009F0F82 /* SWPeopleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4423762250D0BA009F0F82 /* SWPeopleResponse.swift */; };
+		CC4423792250D30F009F0F82 /* SWPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4423782250D30F009F0F82 /* SWPerson.swift */; };
+		CC44237B2250D563009F0F82 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44237A2250D563009F0F82 /* NetworkManager.swift */; };
+		CC44237D2250E776009F0F82 /* SWSpecie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44237C2250E776009F0F82 /* SWSpecie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +75,20 @@
 		CC442356225037D3009F0F82 /* SWCharDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCharDetailsViewController.swift; sourceTree = "<group>"; };
 		CC44235822503909009F0F82 /* SWCustomAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCustomAnimator.swift; sourceTree = "<group>"; };
 		CC44235A22503E30009F0F82 /* SWCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCharacter.swift; sourceTree = "<group>"; };
+		CC4423612250BD0F009F0F82 /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
+		CC4423632250BE2B009F0F82 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		CC4423652250BE60009F0F82 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		CC4423672250BF00009F0F82 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		CC4423692250C282009F0F82 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CC44236B2250C317009F0F82 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		CC44236D2250C505009F0F82 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		CC44236F2250C5F4009F0F82 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		CC4423712250C6F6009F0F82 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		CC4423732250CCF1009F0F82 /* StarWarsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsApi.swift; sourceTree = "<group>"; };
+		CC4423762250D0BA009F0F82 /* SWPeopleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWPeopleResponse.swift; sourceTree = "<group>"; };
+		CC4423782250D30F009F0F82 /* SWPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWPerson.swift; sourceTree = "<group>"; };
+		CC44237A2250D563009F0F82 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CC44237C2250E776009F0F82 /* SWSpecie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSpecie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,8 +178,62 @@
 		CC44235C225058CE009F0F82 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				CC4423752250D091009F0F82 /* Model */,
+				CC4423602250BCB0009F0F82 /* Encoding */,
+				CC44235F2250BCA5009F0F82 /* Service */,
+				CC44235E2250BC99009F0F82 /* Manager */,
+				CC44235D2250BC90009F0F82 /* Endpoint */,
+				CC4423692250C282009F0F82 /* NetworkError.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		CC44235D2250BC90009F0F82 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				CC4423612250BD0F009F0F82 /* EndpointType.swift */,
+				CC4423732250CCF1009F0F82 /* StarWarsApi.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		CC44235E2250BC99009F0F82 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CC44237A2250D563009F0F82 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CC44235F2250BCA5009F0F82 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CC4423632250BE2B009F0F82 /* HTTPMethod.swift */,
+				CC4423652250BE60009F0F82 /* HTTPTask.swift */,
+				CC44236F2250C5F4009F0F82 /* NetworkRouter.swift */,
+				CC4423712250C6F6009F0F82 /* Router.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CC4423602250BCB0009F0F82 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				CC4423672250BF00009F0F82 /* ParameterEncoding.swift */,
+				CC44236B2250C317009F0F82 /* URLParameterEncoder.swift */,
+				CC44236D2250C505009F0F82 /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		CC4423752250D091009F0F82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC4423762250D0BA009F0F82 /* SWPeopleResponse.swift */,
+				CC4423782250D30F009F0F82 /* SWPerson.swift */,
+				CC44237C2250E776009F0F82 /* SWSpecie.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,11 +370,25 @@
 			files = (
 				CC44231F22501E26009F0F82 /* ViewController.swift in Sources */,
 				CC44234B2250298A009F0F82 /* SWColorScheme.swift in Sources */,
+				CC4423622250BD0F009F0F82 /* EndpointType.swift in Sources */,
+				CC44237B2250D563009F0F82 /* NetworkManager.swift in Sources */,
 				CC44234E22502D03009F0F82 /* SWCollectionViewCell.swift in Sources */,
 				CC44235B22503E30009F0F82 /* SWCharacter.swift in Sources */,
+				CC44236E2250C505009F0F82 /* JSONParameterEncoder.swift in Sources */,
 				CC442357225037D3009F0F82 /* SWCharDetailsViewController.swift in Sources */,
+				CC44236C2250C317009F0F82 /* URLParameterEncoder.swift in Sources */,
+				CC4423682250BF00009F0F82 /* ParameterEncoding.swift in Sources */,
+				CC44237D2250E776009F0F82 /* SWSpecie.swift in Sources */,
+				CC4423702250C5F4009F0F82 /* NetworkRouter.swift in Sources */,
+				CC4423792250D30F009F0F82 /* SWPerson.swift in Sources */,
+				CC4423722250C6F6009F0F82 /* Router.swift in Sources */,
 				CC44235922503909009F0F82 /* SWCustomAnimator.swift in Sources */,
+				CC4423662250BE60009F0F82 /* HTTPTask.swift in Sources */,
 				CC44235122502F33009F0F82 /* AboutViewController.swift in Sources */,
+				CC44236A2250C282009F0F82 /* NetworkError.swift in Sources */,
+				CC4423772250D0BA009F0F82 /* SWPeopleResponse.swift in Sources */,
+				CC4423742250CCF1009F0F82 /* StarWarsApi.swift in Sources */,
+				CC4423642250BE2B009F0F82 /* HTTPMethod.swift in Sources */,
 				CC44231D22501E26009F0F82 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +557,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QSG974CFQP;
 				INFOPLIST_FILE = StarWarsApi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -478,6 +575,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QSG974CFQP;
 				INFOPLIST_FILE = StarWarsApi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
