@@ -35,9 +35,7 @@ struct NetworkManager {
     
     func getPeople(page: Int, completion: @escaping (_ people: [SWPerson]?, _ nextPage: String?, _ error: String?) -> ()) {
         router.request(.allCharacters(page: page)) { data, response, error in
-            if error != nil {
-                completion(nil, nil, NetworkResponse.networkFail.rawValue)
-            }
+            guard error == nil else { completion(nil, nil, NetworkResponse.networkFail.rawValue); return }
             if let response = response as? HTTPURLResponse {
                 let result = self.handleNetworkResponse(response)
                 switch result {
@@ -59,14 +57,9 @@ struct NetworkManager {
     }
     
     func getSpecies(url: String, completion: @escaping(_ species: SWSpecie?, _ error: String?) -> ()) {
-        guard let url = URL(string: url) else {
-            completion(nil, "Error in url")
-            return
-        }
+        guard let url = URL(string: url) else { completion(nil, "Error in url"); return }
         router.request(.directUrl(url: url), completion: { data, response, error in
-            if error != nil {
-                completion(nil, NetworkResponse.networkFail.rawValue)
-            }
+            guard error == nil else { completion(nil, NetworkResponse.networkFail.rawValue); return }
             if let response = response as? HTTPURLResponse {
                 let result = self.handleNetworkResponse(response)
                 switch result {
@@ -76,6 +69,53 @@ struct NetworkManager {
                     }
                     do {
                         let apiResponse = try JSONDecoder().decode(SWSpecie.self, from: responseData)
+                        completion(apiResponse, nil)
+                    } catch {
+                        completion(nil, NetworkResponse.unableToDecode.rawValue)
+                    }
+                case .failure(let error):
+                    completion(nil, error)
+                }
+            }
+        })
+    }
+    
+    func getVehicles(url: String, completion: @escaping(_ species: SWVehicle?, _ error: String?) -> ()) {
+        guard let url = URL(string: url) else { completion(nil, "Error in url"); return }
+        router.request(.directUrl(url: url), completion: { data, response, error in
+            guard error == nil else { completion(nil, NetworkResponse.networkFail.rawValue); return }
+            if let response = response as? HTTPURLResponse {
+                let result = self.handleNetworkResponse(response)
+                switch result {
+                case .success:
+                    guard let responseData = data else { completion(nil, NetworkResponse.noData.rawValue)
+                        return
+                    }
+                    do {
+                        let apiResponse = try JSONDecoder().decode(SWVehicle.self, from: responseData)
+                        completion(apiResponse, nil)
+                    } catch {
+                        completion(nil, NetworkResponse.unableToDecode.rawValue)
+                    }
+                case .failure(let error):
+                    completion(nil, error)
+                }
+            }
+        })
+    }
+    func getHomePlanet(url: String, completion: @escaping(_ species: SWPlanet?, _ error: String?) -> ()) {
+        guard let url = URL(string: url) else { completion(nil, "Error in url"); return }
+        router.request(.directUrl(url: url), completion: { data, response, error in
+            guard error == nil else { completion(nil, NetworkResponse.networkFail.rawValue); return }
+            if let response = response as? HTTPURLResponse {
+                let result = self.handleNetworkResponse(response)
+                switch result {
+                case .success:
+                    guard let responseData = data else { completion(nil, NetworkResponse.noData.rawValue)
+                        return
+                    }
+                    do {
+                        let apiResponse = try JSONDecoder().decode(SWPlanet.self, from: responseData)
                         completion(apiResponse, nil)
                     } catch {
                         completion(nil, NetworkResponse.unableToDecode.rawValue)

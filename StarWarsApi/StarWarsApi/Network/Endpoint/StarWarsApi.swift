@@ -23,7 +23,7 @@ extension StarWarsApi: EndpointType {
         case .directUrl(let url):
             return url
         default:
-            guard let url = URL(string: "https://swapi.co/api/") else { fatalError("Error in the url")}
+            guard let url = URL(string: "https://swapi.co/api/") else { fatalError("Error in the url") }
             return url
         }
     }

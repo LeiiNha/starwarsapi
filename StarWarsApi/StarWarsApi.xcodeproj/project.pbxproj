@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CC44231D22501E26009F0F82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44231C22501E26009F0F82 /* AppDelegate.swift */; };
-		CC44231F22501E26009F0F82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44231E22501E26009F0F82 /* ViewController.swift */; };
+		CC44231F22501E26009F0F82 /* SWCharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44231E22501E26009F0F82 /* SWCharactersViewController.swift */; };
 		CC44232422501E28009F0F82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC44232322501E28009F0F82 /* Assets.xcassets */; };
 		CC44232722501E28009F0F82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC44232522501E28009F0F82 /* LaunchScreen.storyboard */; };
 		CC44233222501E28009F0F82 /* StarWarsApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44233122501E28009F0F82 /* StarWarsApiTests.swift */; };
@@ -17,10 +17,8 @@
 		CC44234E22502D03009F0F82 /* SWCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44234C22502D03009F0F82 /* SWCollectionViewCell.swift */; };
 		CC44234F22502D03009F0F82 /* SWCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC44234D22502D03009F0F82 /* SWCollectionViewCell.xib */; };
 		CC44235122502F33009F0F82 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44235022502F33009F0F82 /* AboutViewController.swift */; };
-		CC4423532250314A009F0F82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4423522250314A009F0F82 /* Main.storyboard */; };
 		CC442357225037D3009F0F82 /* SWCharDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC442356225037D3009F0F82 /* SWCharDetailsViewController.swift */; };
 		CC44235922503909009F0F82 /* SWCustomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44235822503909009F0F82 /* SWCustomAnimator.swift */; };
-		CC44235B22503E30009F0F82 /* SWCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44235A22503E30009F0F82 /* SWCharacter.swift */; };
 		CC4423622250BD0F009F0F82 /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4423612250BD0F009F0F82 /* EndpointType.swift */; };
 		CC4423642250BE2B009F0F82 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4423632250BE2B009F0F82 /* HTTPMethod.swift */; };
 		CC4423662250BE60009F0F82 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4423652250BE60009F0F82 /* HTTPTask.swift */; };
@@ -35,6 +33,11 @@
 		CC4423792250D30F009F0F82 /* SWPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4423782250D30F009F0F82 /* SWPerson.swift */; };
 		CC44237B2250D563009F0F82 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44237A2250D563009F0F82 /* NetworkManager.swift */; };
 		CC44237D2250E776009F0F82 /* SWSpecie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44237C2250E776009F0F82 /* SWSpecie.swift */; };
+		CC44237F22511316009F0F82 /* SWVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44237E22511316009F0F82 /* SWVehicle.swift */; };
+		CC44238222511C8F009F0F82 /* SWDataSource+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44238122511C8F009F0F82 /* SWDataSource+CollectionView.swift */; };
+		CC44238422511F32009F0F82 /* SWDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44238322511F32009F0F82 /* SWDelegate.swift */; };
+		CC44238A22513ECA009F0F82 /* SWPlanet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44238922513ECA009F0F82 /* SWPlanet.swift */; };
+		CC44238D225151FE009F0F82 /* Curriculum.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC44238C225151FD009F0F82 /* Curriculum.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +60,7 @@
 /* Begin PBXFileReference section */
 		CC44231922501E26009F0F82 /* StarWarsApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC44231C22501E26009F0F82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC44231E22501E26009F0F82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC44231E22501E26009F0F82 /* SWCharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCharactersViewController.swift; sourceTree = "<group>"; };
 		CC44232322501E28009F0F82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC44232622501E28009F0F82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC44232822501E28009F0F82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,10 +74,8 @@
 		CC44234C22502D03009F0F82 /* SWCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCollectionViewCell.swift; sourceTree = "<group>"; };
 		CC44234D22502D03009F0F82 /* SWCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWCollectionViewCell.xib; sourceTree = "<group>"; };
 		CC44235022502F33009F0F82 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		CC4423522250314A009F0F82 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CC442356225037D3009F0F82 /* SWCharDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCharDetailsViewController.swift; sourceTree = "<group>"; };
 		CC44235822503909009F0F82 /* SWCustomAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCustomAnimator.swift; sourceTree = "<group>"; };
-		CC44235A22503E30009F0F82 /* SWCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCharacter.swift; sourceTree = "<group>"; };
 		CC4423612250BD0F009F0F82 /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
 		CC4423632250BE2B009F0F82 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		CC4423652250BE60009F0F82 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
@@ -89,6 +90,11 @@
 		CC4423782250D30F009F0F82 /* SWPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWPerson.swift; sourceTree = "<group>"; };
 		CC44237A2250D563009F0F82 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CC44237C2250E776009F0F82 /* SWSpecie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSpecie.swift; sourceTree = "<group>"; };
+		CC44237E22511316009F0F82 /* SWVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWVehicle.swift; sourceTree = "<group>"; };
+		CC44238122511C8F009F0F82 /* SWDataSource+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SWDataSource+CollectionView.swift"; sourceTree = "<group>"; };
+		CC44238322511F32009F0F82 /* SWDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWDelegate.swift; sourceTree = "<group>"; };
+		CC44238922513ECA009F0F82 /* SWPlanet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWPlanet.swift; sourceTree = "<group>"; };
+		CC44238C225151FD009F0F82 /* Curriculum.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Curriculum.pdf; path = StarWarsApi/Curriculum.pdf; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,20 +145,14 @@
 		CC44231B22501E26009F0F82 /* StarWarsApi */ = {
 			isa = PBXGroup;
 			children = (
+				CC44238B225151E9009F0F82 /* Assets */,
+				CC44238822513A42009F0F82 /* Views */,
+				CC4423872251309C009F0F82 /* Utils */,
+				CC4423862251307F009F0F82 /* DataSource+Delegate */,
+				CC44238522513079009F0F82 /* ViewControllers */,
 				CC44235C225058CE009F0F82 /* Network */,
 				CC44231C22501E26009F0F82 /* AppDelegate.swift */,
-				CC44231E22501E26009F0F82 /* ViewController.swift */,
-				CC44232322501E28009F0F82 /* Assets.xcassets */,
 				CC44232522501E28009F0F82 /* LaunchScreen.storyboard */,
-				CC44232822501E28009F0F82 /* Info.plist */,
-				CC44234A2250298A009F0F82 /* SWColorScheme.swift */,
-				CC44234C22502D03009F0F82 /* SWCollectionViewCell.swift */,
-				CC44234D22502D03009F0F82 /* SWCollectionViewCell.xib */,
-				CC44235022502F33009F0F82 /* AboutViewController.swift */,
-				CC4423522250314A009F0F82 /* Main.storyboard */,
-				CC442356225037D3009F0F82 /* SWCharDetailsViewController.swift */,
-				CC44235822503909009F0F82 /* SWCustomAnimator.swift */,
-				CC44235A22503E30009F0F82 /* SWCharacter.swift */,
 			);
 			path = StarWarsApi;
 			sourceTree = "<group>";
@@ -232,8 +232,57 @@
 				CC4423762250D0BA009F0F82 /* SWPeopleResponse.swift */,
 				CC4423782250D30F009F0F82 /* SWPerson.swift */,
 				CC44237C2250E776009F0F82 /* SWSpecie.swift */,
+				CC44237E22511316009F0F82 /* SWVehicle.swift */,
+				CC44238922513ECA009F0F82 /* SWPlanet.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CC44238522513079009F0F82 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC442356225037D3009F0F82 /* SWCharDetailsViewController.swift */,
+				CC44231E22501E26009F0F82 /* SWCharactersViewController.swift */,
+				CC44235022502F33009F0F82 /* AboutViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CC4423862251307F009F0F82 /* DataSource+Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				CC44238322511F32009F0F82 /* SWDelegate.swift */,
+				CC44238122511C8F009F0F82 /* SWDataSource+CollectionView.swift */,
+			);
+			path = "DataSource+Delegate";
+			sourceTree = "<group>";
+		};
+		CC4423872251309C009F0F82 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CC44234A2250298A009F0F82 /* SWColorScheme.swift */,
+				CC44235822503909009F0F82 /* SWCustomAnimator.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CC44238822513A42009F0F82 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC44234C22502D03009F0F82 /* SWCollectionViewCell.swift */,
+				CC44234D22502D03009F0F82 /* SWCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC44238B225151E9009F0F82 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CC44238C225151FD009F0F82 /* Curriculum.pdf */,
+				CC44232822501E28009F0F82 /* Info.plist */,
+				CC44232322501E28009F0F82 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,9 +390,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC44232722501E28009F0F82 /* LaunchScreen.storyboard in Resources */,
+				CC44238D225151FE009F0F82 /* Curriculum.pdf in Resources */,
 				CC44232422501E28009F0F82 /* Assets.xcassets in Resources */,
 				CC44234F22502D03009F0F82 /* SWCollectionViewCell.xib in Resources */,
-				CC4423532250314A009F0F82 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,25 +417,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC44231F22501E26009F0F82 /* ViewController.swift in Sources */,
+				CC44231F22501E26009F0F82 /* SWCharactersViewController.swift in Sources */,
 				CC44234B2250298A009F0F82 /* SWColorScheme.swift in Sources */,
 				CC4423622250BD0F009F0F82 /* EndpointType.swift in Sources */,
 				CC44237B2250D563009F0F82 /* NetworkManager.swift in Sources */,
 				CC44234E22502D03009F0F82 /* SWCollectionViewCell.swift in Sources */,
-				CC44235B22503E30009F0F82 /* SWCharacter.swift in Sources */,
+				CC44237F22511316009F0F82 /* SWVehicle.swift in Sources */,
 				CC44236E2250C505009F0F82 /* JSONParameterEncoder.swift in Sources */,
 				CC442357225037D3009F0F82 /* SWCharDetailsViewController.swift in Sources */,
 				CC44236C2250C317009F0F82 /* URLParameterEncoder.swift in Sources */,
+				CC44238222511C8F009F0F82 /* SWDataSource+CollectionView.swift in Sources */,
 				CC4423682250BF00009F0F82 /* ParameterEncoding.swift in Sources */,
 				CC44237D2250E776009F0F82 /* SWSpecie.swift in Sources */,
 				CC4423702250C5F4009F0F82 /* NetworkRouter.swift in Sources */,
 				CC4423792250D30F009F0F82 /* SWPerson.swift in Sources */,
 				CC4423722250C6F6009F0F82 /* Router.swift in Sources */,
 				CC44235922503909009F0F82 /* SWCustomAnimator.swift in Sources */,
+				CC44238422511F32009F0F82 /* SWDelegate.swift in Sources */,
 				CC4423662250BE60009F0F82 /* HTTPTask.swift in Sources */,
 				CC44235122502F33009F0F82 /* AboutViewController.swift in Sources */,
 				CC44236A2250C282009F0F82 /* NetworkError.swift in Sources */,
 				CC4423772250D0BA009F0F82 /* SWPeopleResponse.swift in Sources */,
+				CC44238A22513ECA009F0F82 /* SWPlanet.swift in Sources */,
 				CC4423742250CCF1009F0F82 /* StarWarsApi.swift in Sources */,
 				CC4423642250BE2B009F0F82 /* HTTPMethod.swift in Sources */,
 				CC44231D22501E26009F0F82 /* AppDelegate.swift in Sources */,
@@ -558,7 +610,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QSG974CFQP;
-				INFOPLIST_FILE = StarWarsApi/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/StarWarsApi/Assets/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -576,7 +628,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QSG974CFQP;
-				INFOPLIST_FILE = StarWarsApi/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/StarWarsApi/Assets/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

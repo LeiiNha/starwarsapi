@@ -1,5 +1,5 @@
 //
-//  SWSpecie.swift
+//  SWPlanet.swift
 //  StarWarsApi
 //
 //  Created by Erica Geraldes on 31/03/2019.
@@ -8,23 +8,20 @@
 
 import Foundation
 
-struct SWSpecie {
+struct SWPlanet {
     let name: String?
-    let homePlanet: String?
     let url: String?
-    
+
     private enum CodingKeys: String,CodingKey {
         case name
-        case homePlanet = "homeworld"
         case url
     }
 }
 
-extension SWSpecie: Decodable {
+extension SWPlanet: Decodable {
     init(decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         name = try values.decodeIfPresent(String.self, forKey: .name)
-        homePlanet = try values.decodeIfPresent(String.self, forKey: .homePlanet)
         url = try values.decodeIfPresent(String.self, forKey: .url)
     }
 }

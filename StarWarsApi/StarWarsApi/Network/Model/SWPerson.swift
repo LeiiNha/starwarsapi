@@ -20,8 +20,8 @@ struct SWPerson {
         case name
         case gender
         case species
-        case skinColor
-        case homePlanet
+        case skinColor = "skin_color"
+        case homePlanet = "homeworld"
         case vehicles
     }
 }
@@ -34,11 +34,5 @@ extension SWPerson: Decodable {
         skinColor = try values.decodeIfPresent(String.self, forKey: .skinColor)
         homePlanet = try values.decodeIfPresent(String.self, forKey: .homePlanet)
         vehicles = try values.decodeIfPresent([String].self, forKey: .vehicles)
-    }
-}
-
-extension SWPerson {
-    func getAttributedDescription() -> NSAttributedString {
-        return NSAttributedString(string: self.name ?? "no name")
     }
 }

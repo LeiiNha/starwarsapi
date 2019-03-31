@@ -22,6 +22,7 @@ class SWCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         let layoutGuide = contentView.layoutMarginsGuide
         
+        detailView.backgroundColor = SWColorScheme.black
         outerView.centerXAnchor.constraint(equalTo: layoutGuide.centerXAnchor).isActive = true
         outerView.centerYAnchor.constraint(equalTo: layoutGuide.centerYAnchor).isActive = true
         outerView.widthAnchor.constraint(equalToConstant: 150.0)
@@ -41,17 +42,19 @@ class SWCollectionViewCell: UICollectionViewCell {
         setAnchors(to: speciesLabel, equalTo: nameLabel, topConstant: 20)
         setAnchors(to: vehicleLabel, equalTo: speciesLabel, topConstant: 20)
         
-        //TODO: Fix some images not showing
-        //charImage.image = UIImage(named: Int.random(in: 1..<12).description)?.withRenderingMode(.alwaysTemplate)
+        
+        charImage.image = UIImage(named: "star-wars")?.withRenderingMode(.alwaysTemplate)
         
     }
-    
     private func setAnchors(to label: UILabel, equalTo view: UIView, topConstant: CGFloat) {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.topAnchor.constraint(equalTo: view.topAnchor, constant: topConstant).isActive = true
         label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 5).isActive = true
         label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -5).isActive = true
         label.textAlignment = .center
+        label.numberOfLines = 0
+        label.lineBreakMode = .byCharWrapping
+        label.adjustsFontSizeToFitWidth = true
     }
 
 }

@@ -12,30 +12,32 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+        let frame = UIScreen.main.bounds
+        window = UIWindow(frame: frame)
         
-        //TODO: Improve this code
+        guard let window = window else { return false }
+        window.rootViewController = self.generateInitialViewController()
+        window.makeKeyAndVisible()
+        
+        return true
+    }
+    
+    func generateInitialViewController() -> UIViewController {
         let tabBarViewController = UITabBarController(nibName: nil, bundle: nil)
-        let charsVC = ViewController()
+        let charsVC = SWCharactersViewController()
         charsVC.tabBarItem = UITabBarItem(title: "Characters", image: UIImage(named: "star-wars"), selectedImage: nil)
         let aboutVC = AboutViewController()
-        aboutVC.tabBarItem = UITabBarItem(title: "About Meh", image: UIImage(named: "leia"), selectedImage: nil)
+        aboutVC.tabBarItem = UITabBarItem(title: "About Me", image: UIImage(named: "leia"), selectedImage: nil)
         tabBarViewController.tabBar.tintColor = SWColorScheme.gold
         tabBarViewController.tabBar.barTintColor = SWColorScheme.black
         tabBarViewController.setViewControllers([charsVC, aboutVC], animated: false)
         
         let initialViewController = UINavigationController(rootViewController: tabBarViewController)
         initialViewController.delegate = charsVC
-        
-        let frame = UIScreen.main.bounds
-        window = UIWindow(frame: frame)
-        
-        window!.rootViewController = initialViewController
-        window!.makeKeyAndVisible()
-        
-        return true
+        return initialViewController
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
